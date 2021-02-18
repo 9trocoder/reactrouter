@@ -23,11 +23,13 @@ const App = () => {
         </div>
       
     </header>
-
-      <Route path="/" exact component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+      <div className="container">
+        <Route path="/" exact component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </div>
+      
     </BrowserRouter>
   );
 }
