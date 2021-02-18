@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {HashRouter, Route, Link} from 'react-router-dom';
 
 import Home from './components/Home';
 import Services from './components/Services';
@@ -11,7 +11,7 @@ const App = () => {
   return (
     
 
-    <BrowserRouter>
+    <HashRouter>
       <header>
         <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
           <h5 className="my-0 mr-md-auto font-weight-normal">React Router</h5>
@@ -32,7 +32,7 @@ const App = () => {
         <Route path="/contact" exact component={Contact} /> 
       </div>
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
