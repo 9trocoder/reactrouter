@@ -15,6 +15,7 @@ const App = () => {
       <Header />
       <div className="container">
         <Switch>
+          {/* <Redirect from="/services" to="/" /> */}
           <Route path="/services/:id"  component={ServicesList} />
           <Route path="/services"  component={Services} />
           <Route path="/about"  component={About} />
