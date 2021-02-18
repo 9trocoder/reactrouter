@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ServicesList = () => {
+const ServicesList = (props) => {
+    console.log(props)
     return (
       <>
-        List of Services
+        <div>{props.match.params.id}</div>
       </>
     );
   }
